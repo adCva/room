@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/room/static/css/main.706684f6.css",
+    "main.js": "/room/static/js/main.3189b189.js",
+    "index.html": "/room/index.html",
+    "main.706684f6.css.map": "/room/static/css/main.706684f6.css.map",
+    "main.3189b189.js.map": "/room/static/js/main.3189b189.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.706684f6.css",
+    "static/js/main.3189b189.js"
+  ]
+}
