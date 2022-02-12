@@ -1,0 +1,93 @@
+.nav-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+
+
+    .nav-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+
+        @media (min-width: 540px) {
+            padding: 2.5rem 2rem;
+        }
+        @media (min-width: 768px) {
+            padding: 3rem;
+        }
+        @media (min-width: 1200px) {
+            padding: 4rem;
+        }
+
+
+        // ============== Hamburgur
+        .nav-btn {
+            z-index: 999;
+
+            @media (min-width: 540px) {
+                display: none;
+            }
+        }
+
+
+        // ============== Logo
+        .nav-logo {
+            margin-left: 6rem;
+
+            @media (min-width: 540px) {
+                margin-left: 0;
+                margin-right: 4rem;
+                width: 70px;
+            }
+        }
+
+
+        // ============== Menu items
+        ul {
+            display: none;
+            justify-content: space-between;
+            background-color: $white;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            padding: 2.2rem 1rem 2.2rem 5.5rem;
+
+            @media (min-width: 540px) {
+                display: flex;
+                background-color: transparent;
+                position: initial;
+                width: 250px;
+                padding: 0;
+            }
+
+
+            li {
+                color: $black;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all 0.25s ease-in-out;
+
+                &:hover {
+                    color: $dark-gray;
+                }
+
+                @media (min-width: 540px) {
+                    color: $white;
+                }
+                @media (min-width: 768px) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+
+        .show-nav {
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "config";
+
+body {
+    font-family: $ff-main;
+    font-size: 12px;
+    font-weight: $fw-medium;
+}
+
+main {
+    position: relative;
+}
+
+
+@import "nav";
+@import "main";
+@import "about";
